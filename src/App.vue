@@ -1,0 +1,38 @@
+<script setup lang="ts">
+import { NConfigProviders } from '@oiij/naive-ui/components'
+import { APP_DESCRIPTION, APP_NAME } from '../config'
+
+const { isDark, preferredDark, theme, themeOverrides, naiveLocal } = storeToRefs(useAppStore())
+useHead({
+  title: APP_NAME,
+  meta: [
+    { name: 'description', content: APP_DESCRIPTION },
+    {
+      name: 'theme-color',
+      content: computed(() => isDark.value ? '#00aba9' : '#ffffff'),
+    },
+  ],
+  link: [
+    {
+      rel: 'icon',
+      type: 'image/svg+xml',
+      href: computed(() => preferredDark.value ? '/favicon-dark.svg' : '/favicon.svg'),
+    },
+  ],
+})
+</script>
+
+<template>
+  <NConfigProviders :config-provider-props="{ abstract: true, theme, themeOverrides, locale: naiveLocal.locale, dateLocale: naiveLocal.dateLocale }">
+    <RouterView v-slot="{ Component }">
+      <Transition appear mode="out-in" name="fade">
+        <Component :is="Component" />
+      </Transition>
+    </RouterView>
+    <NotivueProvider />
+  </NConfigProviders>
+</template>
+
+<style>
+
+</style>

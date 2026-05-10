@@ -1,0 +1,30 @@
+# nitro outputs
+.output
+.data
+.nuxt
+.nitro
+.cache
+.vercel
+
+# app outputs
+dist
+
+# Node dependencies
+node_modules
+
+# Logs
+logs
+*.log
+
+# Misc
+.DS_Store
+.fleet
+.idea
+
+# Local env files
+.env
+.env.*
+!.env.example
+
+auto-imports.d.ts
+components.d.ts
