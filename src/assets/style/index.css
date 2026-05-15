@@ -1,3 +1,8 @@
+@import './markdown.css';
+@import './page-transition.css';
+@import './style-classic.css';
+@import './style-rich.css';
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -25,8 +30,3 @@ body,
 .n-drawer-mask {
   backdrop-filter: blur(20px);
 }
-
-@import './markdown.css';
-@import './page-transition.css';
-@import './style-classic.css';
-@import './style-rich.css';
