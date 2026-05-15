@@ -2,7 +2,7 @@
 
 ## Basic Information
 
-- **Project Name**: vue3-starter-simple
+- **Project Name**: vue-starte
 - **Type**: Web Application (SPA/PWA)
 - **Version**: 0.0.1
 - **Author**: oiij

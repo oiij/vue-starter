@@ -12,13 +12,13 @@
 [![Vitest](https://img.shields.io/badge/Vitest-4.1.5-6E9F18?style=flat&logo=vitest&logoColor=white)](https://vitest.dev/)
 [![ESLint](https://img.shields.io/badge/ESLint-10.3.0-4B32C3?style=flat&logo=eslint&logoColor=white)](https://eslint.org/)
 [![pnpm](https://img.shields.io/badge/pnpm-latest-F69220?style=flat&logo=pnpm&logoColor=white)](https://pnpm.io/)
-[![License](https://img.shields.io/badge/license-MIT-green?style=flat)](https://github.com/oiij/vue3-starter-simple/blob/main/LICENSE)
+[![License](https://img.shields.io/badge/license-MIT-green?style=flat)](https://github.com/oiij/vue-starte/blob/main/LICENSE)
 
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](https://github.com/oiij/vue3-starter-simple/pulls)
-[![GitHub stars](https://img.shields.io/github/stars/oiij/vue3-starter-simple?style=flat&logo=github)](https://github.com/oiij/vue3-starter-simple/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/oiij/vue3-starter-simple?style=flat&logo=github)](https://github.com/oiij/vue3-starter-simple/network/members)
-[![GitHub issues](https://img.shields.io/github/issues/oiij/vue3-starter-simple?style=flat&logo=github)](https://github.com/oiij/vue3-starter-simple/issues)
-[![GitHub last commit](https://img.shields.io/github/last-commit/oiij/vue3-starter-simple?style=flat&logo=github)](https://github.com/oiij/vue3-starter-simple/commits/main)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](https://github.com/oiij/vue-starte/pulls)
+[![GitHub stars](https://img.shields.io/github/stars/oiij/vue-starte?style=flat&logo=github)](https://github.com/oiij/vue-starte/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/oiij/vue-starte?style=flat&logo=github)](https://github.com/oiij/vue-starte/network/members)
+[![GitHub issues](https://img.shields.io/github/issues/oiij/vue-starte?style=flat&logo=github)](https://github.com/oiij/vue-starte/issues)
+[![GitHub last commit](https://img.shields.io/github/last-commit/oiij/vue-starte?style=flat&logo=github)](https://github.com/oiij/vue-starte/commits/main)
 
 </div>
 
@@ -146,7 +146,7 @@ pnpm preview
 ## 📁 项目结构
 
 ```
-vue3-starter-simple/
+vue-starte/
 ├── config/                 # 应用配置常量
 │   └── index.ts           # 端口、API 前缀等配置
 ├── plugins/                # Vite 插件配置
