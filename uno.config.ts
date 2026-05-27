@@ -5,6 +5,7 @@ import { presetAnimations } from 'unocss-preset-animations'
 import { presetExtra } from 'unocss-preset-extra'
 import { presetScrollbar } from 'unocss-preset-scrollbar'
 import presetTheme from 'unocss-preset-theme'
+import { FileSystemIconLoader } from 'unplugin-icons/loaders'
 
 export default defineConfig({
   rules: [
@@ -22,9 +23,15 @@ export default defineConfig({
     presetAttributify({}),
     presetIcons({
       scale: 1.2,
+      warn: true,
       extraProperties: {
         'display': 'inline-block',
         'vertical-align': 'middle',
+        'width': '1.2em',
+        'height': '1.2em',
+      },
+      collections: {
+        custom: FileSystemIconLoader('./src/assets/icons'),
       },
     }),
     presetTypography(),
