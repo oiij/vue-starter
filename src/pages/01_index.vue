@@ -22,7 +22,7 @@ const { data } = useRequest(() => post('/hello'), {
 </script>
 
 <template>
-  <div class="wh-full flex-col-center gap-10">
+  <div class="flex-col-center gap-10 wh-full">
     <span>Hello!</span>
     <span>{{ data }}</span>
     <Foo />

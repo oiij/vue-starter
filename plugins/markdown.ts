@@ -1,6 +1,5 @@
 // https://github.com/antfu/vite-plugin-vue-markdown
-import Shiki from '@shikijs/markdown-it'
-import { transformerTwoslash } from '@shikijs/twoslash'
+import Shiki from '@shikijs/markdown-exit'
 import LinkAttributes from 'markdown-it-link-attributes'
 import Markdown from 'unplugin-vue-markdown/vite'
 
@@ -8,18 +7,12 @@ export default Markdown({
   wrapperClasses: 'prose',
   headEnabled: true,
   async markdownItSetup(md) {
-    // https://prismjs.com/
-    md.use(await Shiki({
+    md.use(Shiki({
       defaultColor: false,
       themes: {
         light: 'vitesse-light',
         dark: 'vitesse-dark',
       },
-      transformers: [
-        transformerTwoslash({
-          explicitTrigger: true,
-        }),
-      ],
     }))
     md.use(LinkAttributes, {
       matcher: (link: string) => /^https?:\/\//.test(link),

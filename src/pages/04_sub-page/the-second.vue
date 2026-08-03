@@ -13,7 +13,7 @@ definePage({
 </script>
 
 <template>
-  <div class="wh-full flex-col-center gap-10">
+  <div class="flex-col-center gap-10 wh-full">
     Hello! THE-SECOND
   </div>
 </template>

@@ -60,7 +60,7 @@ const colorModeOptions = computed(() => [
 </script>
 
 <template>
-  <div class="flex-col gap-[10px] p-[20px]">
+  <div class="p-[20px] flex-col gap-[10px]">
     <CardItem title="通用">
       <NFormItem :label="t('GLOBAL.language')">
         <NSelect v-model:value="language" class="w-[260px]!" :options="localesOptions" />
@@ -70,7 +70,7 @@ const colorModeOptions = computed(() => [
       </NFormItem>
     </CardItem>
     <CardItem title="关于">
-      <div class="w-full flex">
+      <div class="flex w-full">
         <GitHub />
       </div>
     </CardItem>

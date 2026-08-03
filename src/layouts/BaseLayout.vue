@@ -5,8 +5,8 @@ const { collapsed } = storeToRefs(useAppStore())
 </script>
 
 <template>
-  <div class="wh-full flex-col">
-    <NLayout has-sider class="min-h-0 flex-1">
+  <div class="flex-col wh-full">
+    <NLayout has-sider class="flex-1 min-h-0">
       <NLayoutSider
         :width="160"
         :collapsed-width="60"

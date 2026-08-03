@@ -22,8 +22,8 @@ function handleUpdateValue(key: string) {
 </script>
 
 <template>
-  <div class="wh-full flex-col">
-    <div class="min-h-0 w-full flex-1">
+  <div class="flex-col wh-full">
+    <div class="flex-1 min-h-0 w-full">
       <NScrollbar>
         <NMenu
           :collapsed="appStore.collapsed"
@@ -39,7 +39,7 @@ function handleUpdateValue(key: string) {
         />
       </NScrollbar>
     </div>
-    <div class="flex items-center justify-center p-y-[10px]">
+    <div class="p-y-[10px] flex items-center justify-center">
       <NButton quaternary @click="appStore.toggleCollapsed">
         <template #icon>
           <Transition name="fade" mode="out-in">

@@ -22,7 +22,7 @@ useHead({
 </script>
 
 <template>
-  <div class="wh-full flex-col-center gap-10">
+  <div class="flex-col-center gap-10 wh-full">
     Hello! SUB-PAGE
     <Foo />
   </div>

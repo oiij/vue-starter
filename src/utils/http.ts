@@ -39,15 +39,15 @@ axiosInstance.interceptors.response.use(
   },
 )
 
-export function get<RES = any, REQ = object>(path: string, data?: REQ): Promise<RES> {
+export function get<RES = any>(path: string, data?: Record<string, any>): Promise<RES> {
   return axiosInstance(path, {
     method: 'get',
     params: data,
-  })
+  }) as Promise<RES>
 }
-export function post<RES extends string | object>(path: string, data?: Record<string, any>): Promise<RES> {
+export function post<RES = any>(path: string, data?: Record<string, any>): Promise<RES> {
   return axiosInstance(path, {
     method: 'post',
     data,
-  })
+  }) as Promise<RES>
 }

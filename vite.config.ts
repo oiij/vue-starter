@@ -1,4 +1,5 @@
 import type { UserConfig } from 'vite'
+import { resolve } from 'node:path'
 import process from 'node:process'
 import { webUpdateNotice } from '@plugin-web-update-notification/vite'
 import vueJsx from '@vitejs/plugin-vue-jsx'
@@ -108,10 +109,12 @@ export default defineConfig(() => {
         },
       },
       license: true,
-      outDir: '.vercel/output/static', // 必须与nitro输出目录一致，否则unocss会报错
+      outDir: '.output/public', // 必须与nitro输出目录一致，否则unocss会报错
     },
     resolve: {
-      tsconfigPaths: true,
+      alias: {
+        '~': resolve(__dirname, './src'),
+      },
     },
     css: {
       modules: {
